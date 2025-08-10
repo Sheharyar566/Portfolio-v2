@@ -111,20 +111,32 @@ for (let i = 0; i < skills.length; i++) {
 const projectsContainer = document.querySelector(".projects-list");
 const projects = [
   {
-    title: "Crossbolt",
-    description: "Built the official website for CrossBolt Technologies, a design and development agency, using Next.js for a fast, SEO-friendly architecture, Tailwind CSS for a responsive and maintainable design system, and GSAP for smooth, high-performance animations. Focused on creating a clean, modern user experience that reflects the company’s brand while ensuring accessibility and optimal performance across devices.",
+    title: "Crossbolt Technologies",
+    description: "Built a fast, animation-rich website for a logistics brand — designed to inspire trust and load in seconds. The client wanted a clean, modern design that highlighted their cross-border delivery services while feeling dynamic and professional. Using Next.js, Tailwind CSS, and GSAP, I developed smooth transitions, optimized performance, and ensured full mobile responsiveness, giving them a platform that works flawlessly across devices.",
     tags: ["NextJS", "ReactJS", "Tailwind CSS", "GSAP"],
     imageUrl: "./assets/images/projects/crossbolt.png",
-    liveUrl: "https://github.com/sheharyarkhan/crossbolt",
-    sourceUrl: "https://github.com/sheharyarkhan/crossbolt"
+    liveUrl: "https://crossbolttechnologies.com/",
   },
   {
-    title: "Crossbolt",
-    description: "A cross-platform mobile application for cross-border delivery.",
-    tags: ["React Native", "Flutter", "Node.js", "PostgreSQL", "MongoDB"],
-    imageUrl: "./assets/images/projects/crossbolt.png",
-    liveUrl: "https://github.com/sheharyarkhan/crossbolt",
-    sourceUrl: "https://github.com/sheharyarkhan/crossbolt"
+    title: "City Perks",
+    description: "Led the backend development for a multi-platform rewards system that connects businesses with customers through personalized perks. I mentored junior developers, reviewed code, and guided architectural decisions to ensure the platform could scale and perform reliably. Using NestJS, PostgreSQL, and AWS, I implemented secure APIs, optimized database queries, and integrated third-party services — delivering a robust core that powers both the web and mobile apps.",
+    tags: ["Nest.JS", "PostgreSQL", "AWS"],
+    imageUrl: "./assets/images/projects/cityperks.png",
+    liveUrl: "https://cityperks.ai/",
+  },
+  {
+    title: "Thyreality",
+    description: "Helped build a fast, visually polished website for a London-based PaaS provider specializing in AI, blockchain, and quantum-powered solutions. The goal was to present complex, cutting-edge technology in a clear, engaging way that resonates with multiple industries. Using Next.js and Tailwind CSS, I implemented responsive layouts, smooth animations, and performance optimizations — delivering a modern site that’s as advanced as the company’s services.",
+    tags: ["NextJS", "Tailwind CSS"],
+    imageUrl: "./assets/images/projects/thyreality.png",
+    liveUrl: "https://thyreality.com/",
+  },
+  {
+    title: "Influindex",
+    description: "Built a high-performance backend for an influencer analytics platform — engineered to process real-time data and handle heavy traffic without breaking a sweat. Working alongside a frontend developer, I focused on scalable architecture and efficient data pipelines. Using NestJS, PostgreSQL, Prisma, RabbitMQ, and AWS, I delivered a resilient backend that empowers influencers and brands to make data-driven decisions instantly.",
+    tags: ["NextJS", "NestJS", "PostgreSQL", "Prisma", "RabbitMQ", "AWS", "Tailwind CSS"],
+    imageUrl: "./assets/images/projects/influindex.png",
+    liveUrl: "https://influindex.com/",
   }
 ];
 

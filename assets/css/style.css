@@ -157,7 +157,10 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
-
+strong {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-600);
+}
 
 
 
@@ -628,18 +631,31 @@ main {
 .portfolio .article-title { margin-bottom: 25px; }
 
 .projects-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.project-item {
+.project-item > a {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--bg-gradient-jet);
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-item > a::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--eerie-black-1);
+  z-index: -1;
 }
 
 .project-image {
@@ -659,14 +675,12 @@ main {
 
 .project-item > a:hover .project-image img { transform: scale(1.1); }
 
-.project-content { padding: 15px; }
-
-.project-meta {
+.project-content {
+  flex: 1;
+  padding: 15px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
   gap: 7px;
-  margin-bottom: 10px;
 }
 
 .project-title {
@@ -683,6 +697,7 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
   margin-bottom: 25px;
+  flex: 1;
 }
 
 .project-tags {
@@ -831,11 +846,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO 
    */
 
-  .project-img,
-  .blog-banner-box { height: auto; }
+  .project-image { height: auto; }
 
 }
 
@@ -993,7 +1007,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO
    */
 
   .project-image  { border-radius: 16px; }
@@ -1108,9 +1122,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* portfolio */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .projects-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1231,14 +1245,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * BLOG
-   */
-
-  .blog-banner-box { height: 230px; }
+  .project-image { height: 230px; }
 
 }
 
